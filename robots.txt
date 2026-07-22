@@ -1,0 +1,6 @@
+# Franck G Photographie — photo d'identité Albi / Saint-Juéry
+User-agent: *
+Allow: /
+
+# ⚠️ À COMPLÉTER : remplacer par l'URL définitive du site
+Sitemap: https://VOTRE-COMPTE.github.io/photo-identite-albi/sitemap.xml

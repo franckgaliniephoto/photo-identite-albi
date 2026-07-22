@@ -1,0 +1,5 @@
+photo-identite-albi.fr
+# Fichier optionnel. Si un nom de domaine est acheté plus tard :
+# 1. Renommer ce fichier en "CNAME" (sans extension)
+# 2. Remplacer la 1re ligne par le domaine exact, supprimer ces commentaires
+# 3. Configurer les DNS chez le registrar (voir DEPLOIEMENT.md)

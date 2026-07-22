@@ -1,0 +1,14 @@
+{
+  "name": "Franck G Photographie — Photo d'identité Albi",
+  "short_name": "Photo ID Albi",
+  "description": "Photos d'identité sans rendez-vous à Saint-Juéry, près d'Albi. Photographe agréé ANTS.",
+  "lang": "fr",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#17439b",
+  "icons": [
+    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
