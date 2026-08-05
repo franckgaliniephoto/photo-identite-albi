@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, follow">
   <title>Page introuvable | Franck G Photographie</title>
+  <meta name="description" content="Cette page n'existe pas. Retrouvez les photos d'identité sans rendez-vous à Albi et Saint-Juéry sur la page d'accueil, ou appelez le 07 57 81 36 40.">
+  <link rel="icon" href="/photo-identite-albi/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/photo-identite-albi/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#17439b">
   <style>
     :root { --accent: #17439b; --ink: #142138; --soft: #46536b; }
     @media (prefers-color-scheme: dark) {
@@ -24,13 +28,24 @@
       border-radius: 999px; font-weight: 700;
     }
     a.tel { color: var(--accent); font-weight: 700; }
+    ul.plan { list-style: none; padding: 0; margin: 1.75rem 0 0; display: grid; gap: .5rem; }
+    ul.plan a { color: var(--accent); font-weight: 600; }
   </style>
 </head>
 <body>
   <main>
     <h1>Cette page n'existe pas</h1>
     <p>Pas de panique : tout ce qu'il faut savoir sur les photos d'identité à Albi et Saint-Juéry se trouve sur la page d'accueil. Et pour une réponse immédiate&nbsp;: <a class="tel" href="tel:+33757813640">07&nbsp;57&nbsp;81&nbsp;36&nbsp;40</a>.</p>
-    <a class="btn" href="/">Retour à l'accueil</a>
+    <a class="btn" href="/photo-identite-albi/">Retour à l'accueil</a>
+    <nav aria-label="Pages du site">
+      <ul class="plan">
+        <li><a href="/photo-identite-albi/normes-photo-identite/">Les normes de la photo d'identité</a></li>
+        <li><a href="/photo-identite-albi/e-photo-ants/">E-photo ANTS et permis de conduire</a></li>
+        <li><a href="/photo-identite-albi/photo-identite-domicile/">Photo d'identité à domicile, EHPAD et hôpital</a></li>
+        <li><a href="/photo-identite-albi/photo-identite-bebe/">Photo d'identité pour bébé</a></li>
+        <li><a href="/photo-identite-albi/#tarifs">Tarifs</a></li>
+      </ul>
+    </nav>
   </main>
 </body>
 </html>

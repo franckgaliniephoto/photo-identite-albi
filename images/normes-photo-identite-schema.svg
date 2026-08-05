@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" width="560" height="420" role="img"
+     aria-labelledby="schema-titre schema-desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title id="schema-titre">Schéma des normes d'une photo d'identité française : format 35 × 45 mm et hauteur du visage de 32 à 36 mm</title>
+  <desc id="schema-desc">La photo mesure 35 millimètres de large sur 45 millimètres de haut, en orientation portrait. Le visage est centré, de face, sur un fond uni de couleur claire. La hauteur du visage, mesurée du bas du menton au sommet du crâne hors chevelure, doit être comprise entre 32 et 36 millimètres. Un espace libre est laissé au-dessus de la tête et les épaules apparaissent en bas du cadre.</desc>
+
+  <rect width="560" height="420" fill="#ffffff"/>
+
+  <!-- ===== La photo ===== -->
+  <g transform="translate(150,50)">
+    <!-- fond réglementaire gris clair -->
+    <rect x="0" y="0" width="210" height="270" fill="#e6ebf3" stroke="#17439b" stroke-width="2.5" rx="3"/>
+
+    <!-- épaules -->
+    <path d="M32 270c8-52 34-80 73-80s65 28 73 80z" fill="#17439b" opacity=".85"/>
+    <!-- cou -->
+    <rect x="90" y="168" width="30" height="34" fill="#17439b" opacity=".85"/>
+    <!-- tête -->
+    <ellipse cx="105" cy="128" rx="46" ry="56" fill="#17439b"/>
+    <!-- ligne des yeux -->
+    <line x1="18" y1="118" x2="192" y2="118" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="5 5" opacity=".95"/>
+    <text x="18" y="134" font-size="10.5" font-weight="600" fill="#0f172a">ligne des yeux</text>
+
+    <!-- axe vertical de centrage -->
+    <line x1="105" y1="6" x2="105" y2="264" stroke="#17439b" stroke-width="1.2" stroke-dasharray="4 6" opacity=".45"/>
+  </g>
+
+  <!-- ===== Cote hauteur du visage (32 à 36 mm) ===== -->
+  <g stroke="#c2410c" fill="#c2410c">
+    <line x1="392" y1="122" x2="392" y2="234" stroke-width="2"/>
+    <path d="M392 122l-5 9h10z"/><path d="M392 234l-5-9h10z"/>
+    <line x1="360" y1="122" x2="400" y2="122" stroke-width="1.4" stroke-dasharray="3 3" opacity=".7"/>
+    <line x1="360" y1="234" x2="400" y2="234" stroke-width="1.4" stroke-dasharray="3 3" opacity=".7"/>
+  </g>
+  <text x="406" y="168" font-size="15" font-weight="700" fill="#c2410c">32 à 36 mm</text>
+  <text x="406" y="186" font-size="12" fill="#7c3a12">hauteur du visage,</text>
+  <text x="406" y="202" font-size="12" fill="#7c3a12">menton → sommet</text>
+  <text x="406" y="218" font-size="12" fill="#7c3a12">du crâne</text>
+
+  <!-- ===== Cote largeur 35 mm ===== -->
+  <g stroke="#17439b" fill="#17439b">
+    <line x1="150" y1="342" x2="360" y2="342" stroke-width="2"/>
+    <path d="M150 342l9-5v10z"/><path d="M360 342l-9-5v10z"/>
+  </g>
+  <text x="255" y="364" font-size="15" font-weight="700" fill="#17439b" text-anchor="middle">35 mm</text>
+
+  <!-- ===== Cote hauteur 45 mm ===== -->
+  <g stroke="#17439b" fill="#17439b">
+    <line x1="122" y1="50" x2="122" y2="320" stroke-width="2"/>
+    <path d="M122 50l-5 9h10z"/><path d="M122 320l-5-9h10z"/>
+  </g>
+  <text x="112" y="190" font-size="15" font-weight="700" fill="#17439b" text-anchor="end" transform="rotate(-90 112 190)">45 mm</text>
+
+  <!-- ===== Annotations ===== -->
+  <text x="150" y="34" font-size="13" font-weight="600" fill="#0f172a">Espace libre au-dessus de la tête</text>
+  <line x1="150" y1="40" x2="230" y2="50" stroke="#0f172a" stroke-width="1" opacity=".45"/>
+
+  <text x="16" y="76" font-size="13" font-weight="700" fill="#0f172a">Fond uni clair</text>
+  <text x="16" y="94" font-size="12" fill="#475569">gris ou bleu clair —</text>
+  <text x="16" y="110" font-size="12" fill="#475569">le blanc pur est refusé</text>
+  <line x1="124" y1="104" x2="150" y2="92" stroke="#0f172a" stroke-width="1" opacity=".45"/>
+
+  <text x="16" y="266" font-size="13" font-weight="700" fill="#0f172a">Tête nue,</text>
+  <text x="16" y="284" font-size="13" font-weight="700" fill="#0f172a">visage dégagé</text>
+  <text x="16" y="302" font-size="12" fill="#475569">expression neutre,</text>
+  <text x="16" y="318" font-size="12" fill="#475569">bouche fermée</text>
+  <line x1="128" y1="262" x2="196" y2="222" stroke="#0f172a" stroke-width="1" opacity=".45"/>
+
+  <text x="406" y="256" font-size="13" font-weight="700" fill="#0f172a">Moins de 6 mois</text>
+  <text x="406" y="274" font-size="12" fill="#475569">et ressemblante</text>
+
+  <text x="280" y="398" font-size="12" fill="#64748b" text-anchor="middle">Franck G Photographie — photo d’identité à Saint-Juéry &amp; Albi (Tarn)</text>
+</svg>

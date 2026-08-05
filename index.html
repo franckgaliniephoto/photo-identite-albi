@@ -8,45 +8,63 @@
 
   <!--
   ═══════════════════════════════════════════════════════════════════════════
-  ⚠️ UNE SEULE CHOSE À FAIRE AVANT MISE EN LIGNE :
-  remplacer PARTOUT dans ce fichier l'adresse
+  ⚠️ SI VOUS BASCULEZ SUR UN DOMAINE PROPRE :
+  remplacer PARTOUT dans le site l'adresse
       https://franckgaliniephoto.github.io/photo-identite-albi/
-  par l'URL définitive du site (Rechercher/Remplacer dans l'éditeur GitHub).
-  Elle apparaît dans : canonical, Open Graph, JSON-LD, sitemap.xml, robots.txt.
-  Idéalement : un sous-domaine de votre domaine principal, par ex.
-      https://photo-identite.franckgphotographie.fr/
-  (bien plus fort en référencement qu'une adresse en .github.io)
+  par l'URL définitive (Rechercher/Remplacer dans l'éditeur GitHub).
+  Elle apparaît dans : canonical, Open Graph, JSON-LD, sitemap.xml, robots.txt,
+  llms.txt et les 4 pages guides. Idéalement un sous-domaine du domaine
+  principal, par ex. https://photo-identite.franckgphotographie.fr/
+  (bien plus fort en référencement qu'une adresse en .github.io).
+  Voir GUIDE-SEO.md pour la marche à suivre complète.
   ═══════════════════════════════════════════════════════════════════════════
   -->
 
-  <title>Photo d'identité Albi et Tarn – sans RDV, agréé ANTS, à domicile</title>
-  <meta name="description" content="Photographe agréé ANTS près d'Albi : photo d'identité, passeport, permis, e-photo. Sans rendez-vous, prêtes en 5 min. Déplacement à domicile dans le Tarn. 07 57 81 36 40">
+  <title>Photo d'identité Albi et Tarn — sans RDV, agréé ANTS, dès 12 €</title>
+  <meta name="description" content="Photographe agréé ANTS à 8 min d'Albi : photo d'identité, passeport, permis, e-photo. Sans rendez-vous, prêtes en 5 min, dès 12 €. À domicile dans le Tarn.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="author" content="Franck Galinié – Franck G Photographie">
+  <meta name="publisher" content="Franck G Photographie">
+  <meta name="rating" content="general">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="canonical" href="https://franckgaliniephoto.github.io/photo-identite-albi/">
+  <link rel="alternate" hreflang="fr-FR" href="https://franckgaliniephoto.github.io/photo-identite-albi/">
+  <link rel="alternate" hreflang="x-default" href="https://franckgaliniephoto.github.io/photo-identite-albi/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="business.business">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Franck G Photographie">
   <meta property="og:title" content="Photo d'identité à Albi et dans le Tarn – sans rendez-vous, agréé ANTS">
-  <meta property="og:description" content="Photos d'identité conformes imprimées en 5 minutes. E-photo ANTS, permis, passeport, bébés, formats étrangers, déplacement à domicile dans le Tarn. 07 57 81 36 40.">
+  <meta property="og:description" content="Photos d'identité conformes imprimées en 5 minutes, dès 12 €. E-photo ANTS, permis, passeport, bébés, formats étrangers, déplacement à domicile dans le Tarn. 07 57 81 36 40.">
   <meta property="og:url" content="https://franckgaliniephoto.github.io/photo-identite-albi/">
   <meta property="og:image" content="https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg">
-  <meta property="og:image:alt" content="Studio Franck G Photographie – photos d'identité à Saint-Juéry près d'Albi">
+  <meta property="og:image:secure_url" content="https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Planche de photos d'identité 35 × 45 mm — Franck G Photographie, photographe agréé ANTS à Saint-Juéry près d'Albi">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="business:contact_data:street_address" content="23 avenue Germain Téqui">
+  <meta property="business:contact_data:locality" content="Saint-Juéry">
+  <meta property="business:contact_data:postal_code" content="81160">
+  <meta property="business:contact_data:country_name" content="France">
+  <meta property="business:contact_data:phone_number" content="+33757813640">
+  <meta property="business:contact_data:website" content="https://www.franckgphotographie.fr">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Photo d'identité Albi et Tarn – sans RDV, agréé ANTS">
   <meta name="twitter:description" content="Photos d'identité conformes en 5 minutes, sans rendez-vous, à Saint-Juéry près d'Albi. Déplacement à domicile dans tout le Tarn.">
   <meta name="twitter:image" content="https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Planche de photos d'identité 35 × 45 mm réalisée par Franck G Photographie">
 
   <!-- Géolocalisation -->
   <meta name="geo.region" content="FR-81">
   <meta name="geo.placename" content="Saint-Juéry, Albi, Tarn">
   <!-- ⚠️ À VÉRIFIER : coordonnées GPS exactes du 23 avenue Germain Téqui
-       (Google Maps > clic droit sur le point > les coordonnées s'affichent en haut du menu) -->
+       (Google Maps > clic droit sur le point > les coordonnées s'affichent en haut du menu).
+       Elles apparaissent aussi dans le JSON-LD ci-dessous (geo + GeoCircle). -->
   <meta name="geo.position" content="43.9508;2.2126">
   <meta name="ICBM" content="43.9508, 2.2126">
 
@@ -54,43 +72,16 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#17439b">
+  <meta name="theme-color" content="#17439b" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1524" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-title" content="Photo ID Albi">
 
-  <!-- Police d'affichage.
-       ⚠️ RGPD : charger une police depuis fonts.gstatic.com transmet l'IP du visiteur à Google.
-       Recommandé : héberger les fichiers .woff2 dans /fonts et supprimer les 3 lignes ci-dessous
-       (voir GUIDE-SEO.md, section « Vitesse & RGPD »). -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+  <!-- Police d'affichage auto-hébergée : aucun appel à Google Fonts.
+       L'IP du visiteur ne part plus chez un tiers (RGPD) et on économise
+       deux connexions réseau au chargement. Déclarée dans style.css. -->
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Styles des nouveaux blocs uniquement (fil d'Ariane, zones, normes, agrément).
-       Rien n'est écrasé dans style.css : ces classes sont nouvelles. -->
-  <style>
-    :root{--fg-accent:#17439b;--fg-soft:#eef3fc;--fg-line:rgba(15,23,42,.14)}
-    .skip-link{position:absolute;left:-9999px;top:0;z-index:999;background:var(--fg-accent);color:#fff;padding:.7rem 1.1rem;border-radius:0 0 8px 0}
-    .skip-link:focus{left:0}
-    .breadcrumb{max-width:1120px;margin:0 auto;padding:.7rem 1.2rem;font-size:.85rem}
-    .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0}
-    .breadcrumb li+li::before{content:"›";margin-right:.4rem;opacity:.55}
-    .breadcrumb a{text-decoration:none}
-    .breadcrumb [aria-current]{opacity:.7}
-    .grid-auto{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:1.4rem}
-    .zone{border:1px solid var(--fg-line);border-radius:14px;padding:1.05rem 1.15rem;background:#fff}
-    .zone h3{margin:.1rem 0 .4rem;font-size:1.02rem}
-    .zone p{margin:0;font-size:.94rem;line-height:1.55}
-    .delai{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.02em;color:var(--fg-accent);background:var(--fg-soft);border-radius:999px;padding:.2rem .65rem}
-    .ants-box{margin-top:1.4rem;border-left:4px solid var(--fg-accent);background:var(--fg-soft);padding:1rem 1.2rem;border-radius:0 12px 12px 0}
-    .ants-box p{margin:.35rem 0}
-    .quick-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem}
-    .norme-list{list-style:none;padding:0;margin:1.3rem 0 0;display:grid;gap:.65rem}
-    .norme-list li{display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:start;font-size:.96rem;line-height:1.55}
-    .norme-list li::before{content:"✓";color:var(--fg-accent);font-weight:800}
-    .villes-inline{font-size:.92rem;line-height:1.8;opacity:.9}
-    @media (max-width:640px){.breadcrumb{font-size:.8rem}}
-  </style>
 
   <!-- ═══════════════ DONNÉES STRUCTURÉES : un seul graphe relié (@graph) ═══════════════
        Tout est connecté par des @id : établissement ↔ services ↔ page ↔ fil d'Ariane ↔ FAQ.
@@ -100,29 +91,41 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["ProfessionalService", "LocalBusiness"],
+        "@type": ["ProfessionalService", "LocalBusiness", "PhotographyBusiness"],
         "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio",
         "name": "Franck G Photographie",
         "alternateName": "Franck G Photographie – Photo d'identité Albi",
         "legalName": "Franck Galinié",
         "description": "Photographe professionnel agréé ANTS à Saint-Juéry, près d'Albi (Tarn) : photos d'identité sans rendez-vous, e-photo ANTS, permis de conduire, passeport, carte d'identité, titre de séjour, formats étrangers, bébés, et déplacement à domicile, en EHPAD, à l'hôpital ou en entreprise dans tout l'Albigeois.",
+        "disambiguatingDescription": "Studio de photo d'identité situé au 23 avenue Germain Téqui à Saint-Juéry (81160), à environ 8 minutes en voiture du centre d'Albi. Accueil sans rendez-vous du lundi au vendredi de 9h à 18h. Planche de 6 photos à 12 €, e-photo ANTS à 14 €, déplacement à domicile à partir de 25 €.",
         "slogan": "Photo d'identité conforme, sans rendez-vous, prête en 5 minutes.",
         "url": "https://franckgaliniephoto.github.io/photo-identite-albi/",
         "mainEntityOfPage": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#webpage" },
         "image": [
-          "https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg",
-          "https://franckgaliniephoto.github.io/photo-identite-albi/images/studio.jpg",
-          "https://franckgaliniephoto.github.io/photo-identite-albi/images/photo-identite-exemple.jpg"
+          {
+            "@type": "ImageObject",
+            "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#primaryimage",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg",
+            "contentUrl": "https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "caption": "Planche de photos d'identité 35 × 45 mm réalisée par Franck G Photographie à Saint-Juéry, près d'Albi"
+          }
         ],
         "logo": {
           "@type": "ImageObject",
-          "url": "https://franckgaliniephoto.github.io/photo-identite-albi/images/logo.png",
+          "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#logo",
+          "url": "https://franckgaliniephoto.github.io/photo-identite-albi/images/icon-512.png",
+          "contentUrl": "https://franckgaliniephoto.github.io/photo-identite-albi/images/icon-512.png",
+          "width": 512,
+          "height": 512,
           "caption": "Franck G Photographie"
         },
         "telephone": "+33757813640",
         "email": "franckgalinie.photo@gmail.com",
         "priceRange": "€",
-        "founder": { "@type": "Person", "name": "Franck Galinié", "jobTitle": "Photographe professionnel agréé ANTS" },
+        "founder": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#franck" },
+        "employee": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#franck" },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "23 avenue Germain Téqui",
@@ -136,17 +139,25 @@
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }
         ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+33757813640",
-          "contactType": "customer service",
-          "areaServed": "FR",
-          "availableLanguage": "French"
-        },
+        "specialOpeningHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "00:00", "closes": "00:00" }
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+33757813640",
+            "email": "franckgalinie.photo@gmail.com",
+            "contactType": "customer service",
+            "areaServed": "FR",
+            "availableLanguage": ["fr-FR"]
+          }
+        ],
         "amenityFeature": [
           { "@type": "LocationFeatureSpecification", "name": "Parking accessible aux fauteuils roulants", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Accueil sans rendez-vous", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Impression sur place", "value": true }
+          { "@type": "LocationFeatureSpecification", "name": "Impression sur place en 5 minutes", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Déplacement à domicile", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Photographe agréé ANTS", "value": true }
         ],
         "knowsAbout": [
           "Photo d'identité",
@@ -156,11 +167,14 @@
           "Photo passeport biométrique",
           "Photo de titre de séjour",
           "Photo d'identité pour bébé",
-          "Formats photo visa étranger"
+          "Formats photo visa étranger",
+          "Photo d'identité en EHPAD et à l'hôpital",
+          "Portrait professionnel et photo de CV"
         ],
+        "knowsLanguage": "fr-FR",
         "areaServed": [
-          { "@type": "AdministrativeArea", "name": "Tarn (81)" },
-          { "@type": "City", "name": "Albi" },
+          { "@type": "AdministrativeArea", "name": "Tarn (81)", "sameAs": "https://fr.wikipedia.org/wiki/Tarn_(d%C3%A9partement)" },
+          { "@type": "City", "name": "Albi", "sameAs": "https://fr.wikipedia.org/wiki/Albi" },
           { "@type": "City", "name": "Saint-Juéry" },
           { "@type": "City", "name": "Arthès" },
           { "@type": "City", "name": "Lescure-d'Albigeois" },
@@ -172,9 +186,9 @@
           { "@type": "City", "name": "Villefranche-d'Albigeois" },
           { "@type": "City", "name": "Alban" },
           { "@type": "City", "name": "Valence-d'Albigeois" },
-          { "@type": "City", "name": "Carmaux" },
+          { "@type": "City", "name": "Carmaux", "sameAs": "https://fr.wikipedia.org/wiki/Carmaux" },
           { "@type": "City", "name": "Réalmont" },
-          { "@type": "City", "name": "Gaillac" },
+          { "@type": "City", "name": "Gaillac", "sameAs": "https://fr.wikipedia.org/wiki/Gaillac" },
           { "@type": "City", "name": "Graulhet" }
         ],
         "sameAs": [
@@ -183,32 +197,100 @@
         ],
         "paymentAccepted": "Carte bancaire, Espèces, Chèque, PayPal",
         "currenciesAccepted": "EUR",
+        "isAccessibleForFree": false,
+        "publicAccess": true,
         "makesOffer": [
           {
             "@type": "Offer",
+            "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-planche",
             "name": "Planche de 6 photos d'identité papier",
             "price": "12",
             "priceCurrency": "EUR",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/#tarifs",
             "availability": "https://schema.org/InStock",
+            "validFrom": "2026-07-28",
+            "eligibleRegion": { "@type": "AdministrativeArea", "name": "Tarn (81)" },
             "itemOffered": { "@type": "Service", "name": "Planche de photos d'identité papier (CNI, passeport, titre de séjour)", "serviceType": "Photo d'identité" }
           },
           {
             "@type": "Offer",
+            "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-ephoto",
             "name": "E-photo ANTS (photo + signature numérique)",
             "price": "14",
             "priceCurrency": "EUR",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/",
             "availability": "https://schema.org/InStock",
-            "itemOffered": { "@type": "Service", "name": "E-photo ANTS avec code sécurisé pour démarche en ligne (permis de conduire)", "serviceType": "E-photo ANTS" }
+            "validFrom": "2026-07-28",
+            "itemOffered": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#service-ephoto" }
           },
           {
             "@type": "Offer",
+            "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-domicile",
             "name": "Déplacement à domicile, EHPAD, hôpital ou entreprise",
             "priceCurrency": "EUR",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/",
             "priceSpecification": { "@type": "PriceSpecification", "minPrice": "25", "priceCurrency": "EUR" },
             "availability": "https://schema.org/InStock",
             "itemOffered": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#service-domicile" }
           }
+        ],
+        "potentialAction": [
+          {
+            "@type": "ReserveAction",
+            "name": "Réserver une séance",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.franckgphotographie.fr/book-online",
+              "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"]
+            }
+          },
+          {
+            "@type": "CommunicateAction",
+            "name": "Appeler le studio",
+            "target": { "@type": "EntryPoint", "urlTemplate": "tel:+33757813640" }
+          }
         ]
+      },
+
+      {
+        "@type": "Person",
+        "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#franck",
+        "name": "Franck Galinié",
+        "givenName": "Franck",
+        "familyName": "Galinié",
+        "jobTitle": "Photographe professionnel agréé ANTS",
+        "description": "Photographe professionnel installé à Saint-Juéry, dans le Tarn. Agréé par l'Agence nationale des titres sécurisés, il réalise les photos d'identité et les e-photos ANTS de l'agglomération albigeoise, au studio comme à domicile.",
+        "worksFor": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "workLocation": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "url": "https://www.franckgphotographie.fr",
+        "telephone": "+33757813640",
+        "email": "franckgalinie.photo@gmail.com",
+        "knowsLanguage": "fr-FR",
+        "knowsAbout": [
+          "Normes réglementaires de la photo d'identité française",
+          "E-photo ANTS et photo-signature numérique",
+          "Photo d'identité de nourrisson",
+          "Formats de photos pour visas étrangers"
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Agrément professionnel",
+          "name": "Photographe agréé ANTS (Agence nationale des titres sécurisés)",
+          "recognizedBy": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#ants" }
+        },
+        "sameAs": [
+          "https://www.franckgphotographie.fr",
+          "https://www.facebook.com/FranckGPhotographie/"
+        ]
+      },
+
+      {
+        "@type": "GovernmentOrganization",
+        "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#ants",
+        "name": "Agence nationale des titres sécurisés",
+        "alternateName": "ANTS",
+        "url": "https://ants.gouv.fr/",
+        "description": "Établissement public français qui délivre les titres sécurisés (carte nationale d'identité, passeport, permis de conduire, carte grise) et agrée les photographes et cabines habilités à produire une photo-signature numérique."
       },
 
       {
@@ -219,12 +301,14 @@
         "description": "Prise de vue en studio, contrôle de conformité point par point et impression immédiate d'une planche de photos d'identité, ou remise du code e-photo ANTS pour les démarches en ligne. Sans rendez-vous du lundi au vendredi à Saint-Juéry, à 8 minutes d'Albi.",
         "provider": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
         "areaServed": { "@type": "AdministrativeArea", "name": "Tarn (81)" },
+        "termsOfService": "Photo refusée par la mairie ou par l'ANTS : reprise gratuite.",
         "availableChannel": {
           "@type": "ServiceChannel",
           "serviceUrl": "https://franckgaliniephoto.github.io/photo-identite-albi/#tarifs",
           "servicePhone": { "@type": "ContactPoint", "telephone": "+33757813640" },
           "serviceLocation": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" }
         },
+        "offers": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-planche" },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Documents concernés",
@@ -242,11 +326,43 @@
 
       {
         "@type": "Service",
+        "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#service-ephoto",
+        "name": "E-photo ANTS pour le permis de conduire et les démarches en ligne",
+        "serviceType": "E-photo ANTS (photo-signature numérique)",
+        "description": "Réalisation de la photo-signature numérique par un photographe agréé ANTS et remise immédiate du code e-photo à saisir sur ants.gouv.fr. Utilisable pour le permis de conduire, la carte nationale d'identité et le passeport, valable six mois.",
+        "provider": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "url": "https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/",
+        "areaServed": { "@type": "AdministrativeArea", "name": "Tarn (81)" },
+        "offers": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-ephoto" },
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/",
+          "servicePhone": { "@type": "ContactPoint", "telephone": "+33757813640" },
+          "serviceLocation": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" }
+        }
+      },
+
+      {
+        "@type": "Service",
+        "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#service-bebe",
+        "name": "Photo d'identité pour bébé et jeune enfant",
+        "serviceType": "Photo d'identité de nourrisson",
+        "description": "Séance adaptée aux nourrissons et aux jeunes enfants pour obtenir une photo d'identité conforme : installation sur mesure, éclairage sans flash agressif, plusieurs prises jusqu'au cliché accepté par l'administration.",
+        "provider": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "url": "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-bebe/",
+        "areaServed": { "@type": "AdministrativeArea", "name": "Tarn (81)" },
+        "audience": { "@type": "Audience", "audienceType": "Nourrissons, jeunes enfants et leurs parents" },
+        "offers": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-planche" }
+      },
+
+      {
+        "@type": "Service",
         "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#service-domicile",
         "name": "Photo d'identité à domicile dans le Tarn",
         "serviceType": "Photographe photo d'identité à domicile",
         "description": "Déplacement d'un photographe agréé ANTS à domicile, en EHPAD, en maison de retraite, à l'hôpital, en clinique ou en entreprise pour réaliser des photos d'identité conformes : matériel de studio transporté sur place (éclairage, fond réglementaire, imprimante), séance possible au fauteuil ou au lit, photos et code e-photo remis immédiatement.",
         "provider": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "url": "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/",
         "areaServed": [
           { "@type": "AdministrativeArea", "name": "Tarn (81)" },
           {
@@ -261,15 +377,51 @@
         },
         "availableChannel": {
           "@type": "ServiceChannel",
-          "serviceUrl": "https://franckgaliniephoto.github.io/photo-identite-albi/#domicile",
+          "serviceUrl": "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/",
           "servicePhone": { "@type": "ContactPoint", "telephone": "+33757813640" }
         },
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "EUR",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": "25", "priceCurrency": "EUR" },
-          "availability": "https://schema.org/InStock"
-        }
+        "offers": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#offre-domicile" }
+      },
+
+      {
+        "@type": "HowTo",
+        "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#howto",
+        "name": "Obtenir une photo d'identité conforme au studio, à Albi",
+        "description": "Les quatre étapes d'une séance de photo d'identité chez un photographe agréé ANTS, de l'arrivée sans rendez-vous à la remise de la planche imprimée ou du code e-photo.",
+        "totalTime": "PT5M",
+        "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "12" },
+        "supply": { "@type": "HowToSupply", "name": "Aucune pièce à apporter ; votre ancienne photo si vous avez un doute sur sa validité" },
+        "tool": { "@type": "HowToTool", "name": "Matériel fourni par le studio : éclairage professionnel, fond réglementaire, imprimante photo" },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Passer au studio sans rendez-vous",
+            "text": "Le studio accueille sans rendez-vous du lundi au vendredi de 9h à 18h, au 23 avenue Germain Téqui à Saint-Juéry, à 8 minutes du centre d'Albi. Aucune préparation particulière n'est nécessaire : les conseils de tenue et de coiffure sont donnés sur place.",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/#deroulement"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Réaliser la prise de vue en studio",
+            "text": "Plusieurs clichés sont réalisés avec un éclairage professionnel et le fond réglementaire de couleur claire. Vous choisissez celui qui vous convient. Pour un bébé ou un jeune enfant, la séance prend le temps nécessaire.",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/#deroulement"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Contrôler la conformité avant impression",
+            "text": "Cadrage, hauteur du visage entre 32 et 36 mm, netteté, ombres, reflets sur les lunettes et expression sont vérifiés à l'écran, critère par critère, avant validation. C'est l'étape qui manque au photomaton.",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/normes-photo-identite/"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Repartir avec la planche ou le code e-photo",
+            "text": "La planche de 6 photos au format 35 × 45 mm est imprimée sur place en quelques minutes, ou le code e-photo ANTS vous est remis immédiatement pour votre démarche en ligne.",
+            "url": "https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/"
+          }
+        ]
       },
 
       {
@@ -277,26 +429,57 @@
         "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#site",
         "url": "https://franckgaliniephoto.github.io/photo-identite-albi/",
         "name": "Photo d'identité Albi – Franck G Photographie",
+        "description": "Site du studio Franck G Photographie consacré aux photos d'identité à Albi, Saint-Juéry et dans le Tarn : prestations, tarifs, normes réglementaires, e-photo ANTS et déplacement à domicile.",
         "inLanguage": "fr-FR",
-        "publisher": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" }
+        "publisher": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "copyrightHolder": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "about": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" }
+      },
+
+      {
+        "@type": "ItemList",
+        "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#guides",
+        "name": "Guides pratiques sur la photo d'identité",
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "numberOfItems": 4,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Les normes de la photo d'identité", "url": "https://franckgaliniephoto.github.io/photo-identite-albi/normes-photo-identite/" },
+          { "@type": "ListItem", "position": 2, "name": "E-photo ANTS et permis de conduire", "url": "https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/" },
+          { "@type": "ListItem", "position": 3, "name": "Photo d'identité à domicile, en EHPAD et à l'hôpital", "url": "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/" },
+          { "@type": "ListItem", "position": 4, "name": "Photo d'identité pour bébé et jeune enfant", "url": "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-bebe/" }
+        ]
       },
 
       {
         "@type": ["WebPage", "FAQPage"],
         "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#webpage",
         "url": "https://franckgaliniephoto.github.io/photo-identite-albi/",
-        "name": "Photo d'identité Albi et Tarn – sans RDV, agréé ANTS, à domicile",
+        "name": "Photo d'identité Albi et Tarn — sans RDV, agréé ANTS, dès 12 €",
         "description": "Photographe agréé ANTS près d'Albi : photo d'identité, passeport, permis, e-photo. Sans rendez-vous, prêtes en 5 minutes. Déplacement à domicile dans le Tarn.",
         "isPartOf": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#site" },
         "about": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
-        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://franckgaliniephoto.github.io/photo-identite-albi/images/og-image.jpg" },
+        "mentions": [
+          { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#ants" },
+          { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#howto" }
+        ],
+        "author": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#franck" },
+        "reviewedBy": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#franck" },
+        "publisher": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#studio" },
+        "primaryImageOfPage": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#primaryimage" },
         "breadcrumb": { "@id": "https://franckgaliniephoto.github.io/photo-identite-albi/#breadcrumb" },
+        "significantLink": [
+          "https://franckgaliniephoto.github.io/photo-identite-albi/normes-photo-identite/",
+          "https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/",
+          "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/",
+          "https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-bebe/"
+        ],
+        "keywords": "photo d'identité Albi, photo identité Saint-Juéry, photographe agréé ANTS Tarn, e-photo permis de conduire, photo passeport Albi, photo d'identité à domicile, photo identité bébé Albi, photo identité sans rendez-vous",
         "inLanguage": "fr-FR",
         "datePublished": "2026-01-15",
-        "dateModified": "2026-07-28",
+        "dateModified": "2026-08-04",
         "speakable": {
           "@type": "SpeakableSpecification",
-          "cssSelector": [".hero-lead", "#h-tarifs", "#h-domicile"]
+          "cssSelector": [".hero-lead", "#h-essentiel", "#h-tarifs", "#h-domicile"]
         },
         "mainEntity": [
           { "@type": "Question", "name": "Faut-il prendre rendez-vous pour une photo d'identité ?",
@@ -330,7 +513,11 @@
           { "@type": "Question", "name": "Intervenez-vous à Carmaux, Réalmont, Gaillac ou Villefranche-d'Albigeois ?",
             "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le studio se déplace dans l'Albigeois, le Carmausin, le Ségala, les Monts d'Alban, le Réalmontais et le Gaillacois. Au-delà de 25 km autour de Saint-Juéry, des frais de déplacement complémentaires s'appliquent : ils vous sont annoncés au téléphone avant toute intervention." } },
           { "@type": "Question", "name": "Une même photo peut-elle servir pour plusieurs documents ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Oui, dans la limite de six mois et pour les documents qui partagent le format français 35 x 45 mm : carte d'identité, passeport, titre de séjour, carte Vitale ou licence sportive. En revanche, un visa étranger impose souvent un format différent, à réaliser séparément." } }
+            "acceptedAnswer": { "@type": "Answer", "text": "Oui, dans la limite de six mois et pour les documents qui partagent le format français 35 x 45 mm : carte d'identité, passeport, titre de séjour, carte Vitale ou licence sportive. En revanche, un visa étranger impose souvent un format différent, à réaliser séparément." } },
+          { "@type": "Question", "name": "Quelle est la différence entre un photographe agréé ANTS et un photomaton ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Les deux peuvent délivrer une e-photo s'ils sont agréés, mais seul un photographe contrôle la conformité avant impression : cadrage, hauteur du visage, ombres, reflets et expression sont vérifiés à l'écran, et la prise de vue est refaite autant de fois que nécessaire. La cabine imprime sans juger, ne se déplace pas et ne reprend pas la photo si l'administration la refuse." } },
+          { "@type": "Question", "name": "Quel est le format d'une photo d'identité française ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Le format réglementaire est de 35 mm de large sur 45 mm de haut, en orientation portrait et sans marge blanche. La hauteur du visage, mesurée du bas du menton au sommet du crâne sans compter la chevelure, doit être comprise entre 32 et 36 mm. Ce format vaut pour la carte nationale d'identité, le passeport, le titre de séjour et le permis de conduire." } }
         ]
       },
 
@@ -374,7 +561,7 @@
         <li><a href="#tarifs">Tarifs</a></li>
         <li><a href="#normes">Normes</a></li>
         <li><a href="#domicile">À domicile</a></li>
-        <li><a href="#zones">Zones</a></li>
+        <li><a href="#guides">Guides</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#venir">Venir au studio</a></li>
       </ul>
@@ -465,6 +652,40 @@
         <strong>À domicile</strong><span>Albi, Albigeois et Tarn</span>
       </li>
     </ul>
+  </section>
+
+  <!-- ══════════ 2 bis. L'ESSENTIEL ══════════
+       Bloc de synthèse volontairement factuel et compact : c'est le passage que
+       Google reprend en extrait enrichi et que les assistants IA (ChatGPT,
+       Perplexity, AI Overviews) citent quand on leur demande « où faire une
+       photo d'identité à Albi ». Chaque réponse tient en une phrase autonome. -->
+  <section class="section" id="essentiel" aria-labelledby="h-essentiel">
+    <h2 id="h-essentiel">Photo d'identité à Albi&nbsp;: l'essentiel en 30&nbsp;secondes</h2>
+    <p class="section-intro">Franck G Photographie est un studio de photographie professionnelle agréé ANTS, installé au 23&nbsp;avenue Germain Téqui à Saint-Juéry (81160), à environ 8&nbsp;minutes en voiture du centre d'Albi. Les photos d'identité s'y font sans rendez-vous, et le studio se déplace à domicile dans tout l'Albigeois.</p>
+    <div class="keyfacts">
+      <h3>En résumé</h3>
+      <dl>
+        <dt>Adresse</dt>
+        <dd>23 avenue Germain Téqui, 81160 Saint-Juéry (Tarn), à 8&nbsp;min d'Albi</dd>
+        <dt>Téléphone</dt>
+        <dd><a href="tel:+33757813640">07&nbsp;57&nbsp;81&nbsp;36&nbsp;40</a></dd>
+        <dt>Horaires</dt>
+        <dd>Du lundi au vendredi, 9h–18h, sans rendez-vous</dd>
+        <dt>Prix</dt>
+        <dd>Planche de 6&nbsp;photos&nbsp;: 12&nbsp;€ · E-photo ANTS&nbsp;: 14&nbsp;€ · Déplacement&nbsp;: dès 25&nbsp;€</dd>
+        <dt>Délai</dt>
+        <dd>Environ 5&nbsp;minutes pour un adulte, impression comprise</dd>
+        <dt>Documents couverts</dt>
+        <dd>Carte d'identité, passeport, permis de conduire, titre de séjour, visa, carte Vitale, licence sportive, badge professionnel</dd>
+        <dt>Format français</dt>
+        <dd>35&nbsp;×&nbsp;45&nbsp;mm, visage de 32 à 36&nbsp;mm, fond uni clair, photo de moins de 6&nbsp;mois</dd>
+        <dt>Garantie</dt>
+        <dd>Photo refusée par la mairie ou l'ANTS&nbsp;: reprise gratuite</dd>
+        <dt>Paiement</dt>
+        <dd>Carte bancaire, espèces, chèque, PayPal</dd>
+      </dl>
+    </div>
+    <p class="updated" style="margin-top:1.2rem">Informations vérifiées et mises à jour le <time datetime="2026-08-04">4&nbsp;août&nbsp;2026</time>.</p>
   </section>
 
   <!-- ══════════ 3. PRESTATIONS ══════════ -->
@@ -576,6 +797,15 @@
   <section class="section section-alt" id="normes" aria-labelledby="h-normes">
     <h2 id="h-normes">Les normes d'une photo d'identité conforme</h2>
     <p class="section-intro">Ce sont les critères que je vérifie systématiquement avant d'imprimer. Ils s'appliquent à la carte nationale d'identité, au passeport, au titre de séjour et au permis de conduire.</p>
+
+    <figure style="margin:1.6rem 0 0;max-width:40em">
+      <img src="images/normes-photo-identite-schema.svg"
+           width="560" height="420" loading="lazy" decoding="async"
+           style="width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff"
+           alt="Schéma des normes d'une photo d'identité française : format 35 × 45 mm, hauteur du visage de 32 à 36 mm du menton au sommet du crâne, fond uni de couleur claire, tête nue et expression neutre.">
+      <figcaption class="fineprint">Les cotes réglementaires d'une photo d'identité française. C'est ce gabarit qui sert de référence au contrôle effectué avant chaque impression, au studio comme lors des déplacements à domicile.</figcaption>
+    </figure>
+
     <ul class="norme-list">
       <li><span><strong>Format 35&nbsp;×&nbsp;45&nbsp;mm</strong> — la photo est en orientation portrait, sans marge blanche autour.</span></li>
       <li><span><strong>Hauteur du visage&nbsp;: 32 à 36&nbsp;mm</strong>, mesurée du bas du menton au sommet du crâne, chevelure non comprise.</span></li>
@@ -588,6 +818,10 @@
       <li><span><strong>Tirage net et non retouché</strong> au-delà de ce que la réglementation autorise, sur papier photo de qualité, sans pliure ni trace.</span></li>
     </ul>
     <p class="fineprint" style="margin-top:1.2rem">Pour les nourrissons, les règles sont assouplies&nbsp;: l'enfant doit être seul sur la photo, sur fond uni clair, mais une expression moins neutre est tolérée.</p>
+    <p style="margin-top:1.2rem"><a class="btn btn-secondary" href="normes-photo-identite/">Lire le guide complet des normes&nbsp;→</a></p>
+    <ul class="sources">
+      <li>Références officielles&nbsp;: <a href="https://ants.gouv.fr/" rel="noopener nofollow" target="_blank">ants.gouv.fr</a> (Agence nationale des titres sécurisés) et <a href="https://www.service-public.fr/" rel="noopener nofollow" target="_blank">service-public.fr</a>. En cas d'évolution de la réglementation, ces sources font foi.</li>
+    </ul>
   </section>
 
   <!-- ══════════ 7. POURQUOI ÉVITER LE PHOTOMATON ══════════ -->
@@ -669,6 +903,33 @@
     <p class="fineprint" style="margin-top:1.4rem">Vous ne voyez pas votre commune&nbsp;? Appelez le <a href="tel:+33757813640">07&nbsp;57&nbsp;81&nbsp;36&nbsp;40</a>, je vous dis en trente secondes si je peux venir et à quel tarif.</p>
   </section>
 
+  <!-- ══════════ 9 bis. GUIDES (maillage interne) ══════════
+       Ces quatre pages traitent en profondeur les requêtes que la page d'accueil
+       ne peut qu'effleurer. Elles se lient entre elles et renvoient toutes ici :
+       c'est ce maillage qui fait remonter l'ensemble du site. -->
+  <section class="section" id="guides" aria-labelledby="h-guides">
+    <h2 id="h-guides">Guides pratiques sur la photo d'identité</h2>
+    <p class="section-intro">Quatre pages détaillées pour préparer votre démarche avant même de passer au studio&nbsp;: la réglementation, l'e-photo du permis, le déplacement à domicile et le cas particulier des tout-petits.</p>
+    <nav class="related" aria-label="Guides pratiques">
+      <a href="normes-photo-identite/">
+        <strong>Les normes de la photo d'identité</strong>
+        <span>Format 35&nbsp;×&nbsp;45&nbsp;mm, hauteur du visage, fond, lunettes, couvre-chef&nbsp;: tous les critères, et les huit motifs de refus les plus fréquents.</span>
+      </a>
+      <a href="e-photo-ants/">
+        <strong>E-photo ANTS &amp; permis de conduire</strong>
+        <span>À quoi sert le code e-photo, comment le saisir sur ants.gouv.fr, combien de temps il reste valable, et quand la photo papier reste obligatoire.</span>
+      </a>
+      <a href="photo-identite-domicile/">
+        <strong>À domicile, en EHPAD et à l'hôpital</strong>
+        <span>Comment se passe un déplacement, pour qui, dans quelles communes du Tarn, et comment organiser une séance groupée en établissement ou en entreprise.</span>
+      </a>
+      <a href="photo-identite-bebe/">
+        <strong>Photo d'identité pour bébé</strong>
+        <span>Les normes assouplies pour les nourrissons, comment préparer la séance et pourquoi la cabine automatique échoue presque toujours.</span>
+      </a>
+    </nav>
+  </section>
+
   <!-- ══════════ 10. FAQ ══════════ -->
   <section class="section section-alt" id="faq" aria-labelledby="h-faq">
     <h2 id="h-faq">Questions fréquentes sur la photo d'identité</h2>
@@ -737,6 +998,14 @@
         <summary><h3>Une même photo peut-elle servir pour plusieurs documents&nbsp;?</h3></summary>
         <p>Oui, dans la limite de six mois et pour les documents qui partagent le format français 35&nbsp;×&nbsp;45&nbsp;mm&nbsp;: carte d'identité, passeport, titre de séjour, carte Vitale ou licence sportive. En revanche, un visa étranger impose souvent un format différent, à réaliser séparément.</p>
       </details>
+      <details>
+        <summary><h3>Quelle est la différence entre un photographe agréé ANTS et un photomaton&nbsp;?</h3></summary>
+        <p>Les deux peuvent délivrer une e-photo s'ils sont agréés, mais seul un photographe contrôle la conformité avant impression&nbsp;: cadrage, hauteur du visage, ombres, reflets et expression sont vérifiés à l'écran, et la prise de vue est refaite autant de fois que nécessaire. La cabine imprime sans juger, ne se déplace pas et ne reprend pas la photo si l'administration la refuse. Le détail figure dans le <a href="#photomaton">comparatif</a>.</p>
+      </details>
+      <details>
+        <summary><h3>Quel est le format d'une photo d'identité française&nbsp;?</h3></summary>
+        <p>Le format réglementaire est de 35&nbsp;mm de large sur 45&nbsp;mm de haut, en orientation portrait et sans marge blanche. La hauteur du visage, mesurée du bas du menton au sommet du crâne sans compter la chevelure, doit être comprise entre 32 et 36&nbsp;mm. Ce format vaut pour la carte nationale d'identité, le passeport, le titre de séjour et le permis de conduire&nbsp;: voir le <a href="normes-photo-identite/">guide des normes</a>.</p>
+      </details>
     </div>
   </section>
 
@@ -775,6 +1044,23 @@
     </div>
   </section>
 
+  <!-- ══════════ 11 bis. QUI RÉALISE VOS PHOTOS (E-E-A-T) ══════════
+       Google et les moteurs génératifs cherchent à savoir QUI parle et POURQUOI
+       on devrait le croire. Une page sans auteur identifié plafonne toujours.
+       ⚠️ À COMPLÉTER par Franck : année d'installation, formation, numéro
+       d'agrément ANTS, SIRET. Chaque élément vérifiable ajouté ici est un gain. -->
+  <section class="section section-alt" id="photographe" aria-labelledby="h-photographe">
+    <h2 id="h-photographe">Qui réalise vos photos d'identité&nbsp;?</h2>
+    <div class="prose">
+      <p>Les photos sont réalisées par <strong>Franck Galinié</strong>, photographe professionnel installé à Saint-Juéry, dans le Tarn, sous l'enseigne <strong>Franck G Photographie</strong>. Le studio est <strong>agréé par l'Agence nationale des titres sécurisés (ANTS)</strong>&nbsp;: c'est cet agrément, vérifié par l'administration, qui autorise la production d'une photo-signature numérique et la délivrance du code e-photo utilisé dans les démarches en ligne.</p>
+      <p>Concrètement, cela veut dire qu'une seule et même personne fait la prise de vue, contrôle la conformité à l'écran et lance l'impression. Personne ne repart avec une photo qui n'a pas été vérifiée critère par critère&nbsp;: c'est ce qui permet de garantir la reprise gratuite en cas de refus en mairie ou par l'ANTS.</p>
+      <p>Au-delà de la photo d'identité, le studio réalise également des portraits professionnels, des photos de famille et des reportages&nbsp;: l'ensemble de l'activité est présenté sur le <a href="https://www.franckgphotographie.fr" rel="noopener">site principal Franck G Photographie</a>.</p>
+      <!-- ⚠️ AJOUTEZ ICI, dès que vous les avez sous la main :
+           <p>Photographe installé depuis XXXX. Agrément ANTS n° XXXXXXXX. SIRET XXX XXX XXX XXXXX.</p>
+           Ce sont les trois éléments qui pèsent le plus lourd en crédibilité. -->
+    </div>
+  </section>
+
   <!-- ══════════ 12. CTA FINAL ══════════ -->
   <section class="section cta-final" aria-labelledby="h-cta">
     <h2 id="h-cta">Besoin d'une photo d'identité aujourd'hui&nbsp;?</h2>
@@ -800,13 +1086,17 @@
         <a href="mailto:franckgalinie.photo@gmail.com">franckgalinie.photo@gmail.com</a>
       </address>
     </div>
-    <nav aria-label="Liens">
+    <nav aria-label="Plan du site">
       <ul>
+        <li><a href="normes-photo-identite/">Normes de la photo d'identité</a></li>
+        <li><a href="e-photo-ants/">E-photo ANTS &amp; permis de conduire</a></li>
+        <li><a href="photo-identite-domicile/">Photo d'identité à domicile</a></li>
+        <li><a href="photo-identite-bebe/">Photo d'identité pour bébé</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#venir">Venir au studio</a></li>
         <li><a href="https://www.franckgphotographie.fr" rel="noopener">Site principal — photographe à Albi</a></li>
         <li><a href="https://www.franckgphotographie.fr/book-online" rel="noopener">Réservation en ligne</a></li>
         <li><a href="https://www.facebook.com/FranckGPhotographie/" rel="noopener">Facebook</a></li>
-        <li><a href="#domicile">Photo d'identité à domicile</a></li>
-        <li><a href="#normes">Normes photo d'identité</a></li>
       </ul>
     </nav>
     <div>

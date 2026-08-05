@@ -1,14 +1,42 @@
 {
+  "id": "/photo-identite-albi/",
   "name": "Franck G Photographie — Photo d'identité Albi",
   "short_name": "Photo ID Albi",
-  "description": "Photos d'identité sans rendez-vous à Saint-Juéry, près d'Albi. Photographe agréé ANTS.",
-  "lang": "fr",
-  "start_url": ".",
+  "description": "Photos d'identité sans rendez-vous à Saint-Juéry, près d'Albi. Photographe agréé ANTS, e-photo permis, déplacement à domicile dans le Tarn.",
+  "lang": "fr-FR",
+  "dir": "ltr",
+  "categories": ["business", "photo", "utilities"],
+  "start_url": "./?utm_source=pwa",
+  "scope": "/photo-identite-albi/",
   "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#17439b",
   "icons": [
-    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "images/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Appeler le studio",
+      "short_name": "Appeler",
+      "description": "Joindre Franck G Photographie au 07 57 81 36 40",
+      "url": "tel:+33757813640"
+    },
+    {
+      "name": "Tarifs des photos d'identité",
+      "short_name": "Tarifs",
+      "url": "./#tarifs"
+    },
+    {
+      "name": "Normes de la photo d'identité",
+      "short_name": "Normes",
+      "url": "./normes-photo-identite/"
+    },
+    {
+      "name": "Itinéraire vers le studio",
+      "short_name": "Itinéraire",
+      "url": "./#venir"
+    }
   ]
 }

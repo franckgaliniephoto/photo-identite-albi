@@ -1,6 +1,85 @@
-# Franck G Photographie — photo d'identité Albi / Saint-Juéry
+# ═══════════════════════════════════════════════════════════════════
+# Franck G Photographie — photo d'identité Albi / Saint-Juéry (Tarn)
+# https://franckgaliniephoto.github.io/photo-identite-albi/
+#
+# ⚠️ IMPORTANT — GitHub Pages « projet »
+# Sur une adresse en compte.github.io/projet/, le SEUL robots.txt lu par
+# les moteurs est celui de la RACINE du domaine :
+#     https://franckgaliniephoto.github.io/robots.txt
+# Ce fichier-ci n'est donc PAS pris en compte tant que le site vit sous
+# /photo-identite-albi/. Il devient actif dès la bascule sur un domaine
+# ou un sous-domaine propre (ex. photo-identite.franckgphotographie.fr).
+# En attendant, le sitemap se déclare à la main dans Search Console.
+# ═══════════════════════════════════════════════════════════════════
+
+# ─── Moteurs de recherche classiques ───
 User-agent: *
 Allow: /
+Disallow: /*?*utm_
+Disallow: /*?*fbclid
+Disallow: /*?*gclid
 
-# ⚠️ À COMPLÉTER : remplacer par l'URL définitive du site
-Sitemap: https://VOTRE-COMPTE.github.io/photo-identite-albi/sitemap.xml
+# ─── Moteurs génératifs & assistants IA (GEO) ───
+# Autorisation explicite : c'est la condition pour être lu, cité et
+# recommandé dans ChatGPT, Claude, Perplexity, Copilot, Gemini
+# et les AI Overviews de Google.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ─── Aspirateurs SEO commerciaux (charge serveur, aucun bénéfice) ───
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# ─── Plans du site ───
+Sitemap: https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml
