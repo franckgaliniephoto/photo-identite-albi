@@ -35,7 +35,7 @@ Pour « photo d'identité Albi », **la fiche Google pèse plus lourd que le sit
 - [ ] Catégorie principale : **Photographe** — catégorie secondaire : *Service de photos d'identité*
 - [ ] NAP strictement identique au site, à la lettre près :
       `Franck G Photographie` · `23 avenue Germain Téqui, 81160 Saint-Juéry` · `07 57 81 36 40`
-- [ ] Horaires : lundi–vendredi 9h–18h
+- [ ] Horaires : lundi 8h30–12h / 13h30–17h30 ; mercredi 13h30–18h ; mardi, jeudi et vendredi 8h30–12h / 13h30–18h
 - [ ] Attributs : *accès en fauteuil roulant*, *sans rendez-vous*
 - [ ] Site web pointant vers cette page
 - [ ] Photos réelles : devanture, intérieur du studio, exemple de planche

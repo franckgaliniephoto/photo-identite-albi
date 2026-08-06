@@ -23,7 +23,7 @@ Pour mettre à jour le site ensuite : modifier le fichier directement sur GitHub
 Chaque élément est repérable dans les fichiers en cherchant « ⚠️ » :
 
 1. **E-mail** de contact (footer, mentions légales, et champ `email` du JSON-LD `index.html`).
-2. **Horaires exacts jour par jour** — section « Venir au studio » **et** bloc `openingHoursSpecification` du JSON-LD (actuellement 09:00–18:00 en valeur provisoire : à corriger impérativement, Google l'affiche).
+2. **Horaires exacts jour par jour** — section « Venir au studio » **et** bloc `openingHoursSpecification` du JSON-LD (synchronisés le 6 août 2026 avec le site principal).
 3. **Tarifs** (5 lignes du tableau) : planche papier (+ nombre de photos), e-photo ANTS, formule permis, formats étrangers/visa, déplacement à domicile.
 4. **3 avis Google authentiques** (texte exact + prénom) à coller dans la section Avis — ne rien inventer.
 5. **URL de la fiche Google Business Profile** (lien « Lire tous les avis », et à ajouter dans `sameAs` du JSON-LD).
