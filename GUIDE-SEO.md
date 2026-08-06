@@ -61,7 +61,7 @@ Chaque élément ci-dessous est marqué `⚠️ À COMPLÉTER` dans les fichiers
 |---|---|---|
 | `index.html` §« Qui réalise vos photos » | Année d'installation, **numéro d'agrément ANTS**, SIRET | Signaux E-E-A-T : c'est ce qui distingue un site crédible d'une page vitrine |
 | `index.html` + pages guides, mentions légales | SIRET, statut juridique, TVA, directeur de publication | Obligation légale, et Google contrôle la présence de mentions légales |
-| `index.html` head | **Coordonnées GPS exactes** du 23 avenue Germain Téqui | Actuellement approximatives (43.9508 / 2.2126). Clic droit sur le point dans Google Maps |
+| `index.html` head | **Coordonnées GPS exactes** du 23 avenue Germain Téqui | Harmonisées le 6 août 2026 : 43.94851456213975 / 2.210739448460117 |
 | `index.html` hero | **3 à 5 vraies photos** (bloc commenté, prêt à décommenter) | Voir §3 — c'est la plus grosse marge de progression restante |
 | `index.html` §domicile | Supprimer le bouton WhatsApp si vous ne l'utilisez pas | Un lien mort coûte plus qu'il ne rapporte |
 | `index.html` §zones | Ajuster la liste des communes à votre rayon **réel** | Une promesse non tenue coûte en avis négatifs |

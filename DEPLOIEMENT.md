@@ -28,7 +28,7 @@ Chaque élément est repérable dans les fichiers en cherchant « ⚠️ » :
 4. **3 avis Google authentiques** (texte exact + prénom) à coller dans la section Avis — ne rien inventer.
 5. **URL de la fiche Google Business Profile** (lien « Lire tous les avis », et à ajouter dans `sameAs` du JSON-LD).
 6. **Note et nombre d'avis à jour** (actuellement 4,9/5 — 22 avis) : vérifier sur la fiche Google le jour de la mise en ligne, mettre à jour la section Avis **et** le bloc `aggregateRating`.
-7. **Coordonnées GPS exactes** du 23 avenue Germain Téqui (clic droit sur le point exact dans Google Maps → les coordonnées s'affichent en premier) : à reporter dans `geo.position`, `ICBM` et le bloc `geo` du JSON-LD. Les valeurs actuelles (43.9508 ; 2.2126) sont approximatives.
+7. **Coordonnées GPS exactes** du 23 avenue Germain Téqui : `43.94851456213975, 2.210739448460117`, reportées dans `geo.position`, `ICBM` et le bloc `geo` du JSON-LD le 6 août 2026.
 8. **SIRET et forme juridique** pour les mentions légales (footer).
 9. **Images** listées dans `images/README.md` (au minimum `og-image.jpg` 1200×630 pour un beau partage WhatsApp/Facebook).
 10. **URL définitive du site** à reporter aux 3 endroits listés au point 7 de la section précédente.
