@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://franckgaliniephoto.github.io/photo-identite-albi/</loc>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-tarn/</loc>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://franckgaliniephoto.github.io/photo-identite-albi/normes-photo-identite/</loc>
-    <lastmod>2026-08-06</lastmod>
-  </url>
-  <url>
-    <loc>https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/</loc>
-    <lastmod>2026-08-06</lastmod>
-  </url>
-  <url>
-    <loc>https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/</loc>
-    <lastmod>2026-08-06</lastmod>
-  </url>
-  <url>
-    <loc>https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-bebe/</loc>
-    <lastmod>2026-08-06</lastmod>
-  </url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/</loc><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-tarn/</loc><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/villes-villages-tarn/</loc><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/normes-photo-identite/</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/e-photo-ants/</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-domicile/</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://franckgaliniephoto.github.io/photo-identite-albi/photo-identite-bebe/</loc><lastmod>2026-08-06</lastmod></url>
 </urlset>
