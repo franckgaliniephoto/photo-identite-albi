@@ -17,9 +17,49 @@ surtout **ce qui ne peut être fait que par vous**, en dehors du code.
    `https://franckgaliniephoto.github.io/photo-identite-albi/`
 2. La balise de validation est **déjà en place** dans `index.html`
    (`google-site-verification`), la validation devrait passer directement.
-3. **Soumettre le sitemap** :
-   `https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml`
+3. **Soumettre le sitemap** — voir le piège ci-dessous, c'est là que ça coince.
 4. Demander l'indexation des 5 URL une par une via l'outil « Inspection de l'URL ».
+
+#### ⚠️ « Impossible de récupérer le sitemap » — le piège du sous-dossier
+
+Le site vit dans un **sous-dossier** (`/photo-identite-albi/`), pas à la racine du
+domaine. Dans le champ de soumission, Search Console **préfixe automatiquement**
+l'adresse de la propriété. Résultat : si la propriété est la racine
+`https://franckgaliniephoto.github.io/` et qu'on tape simplement `sitemap.xml`,
+Google va chercher :
+
+```
+https://franckgaliniephoto.github.io/sitemap.xml        ❌ n'existe pas → « Impossible de récupérer »
+https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml   ✅ le vrai fichier
+```
+
+**Comment savoir ce que Google a réellement essayé** : dans le tableau
+« Sitemaps envoyés », la colonne *Sitemap* affiche le chemin complet depuis le
+domaine. S'il affiche `/sitemap.xml` sans `photo-identite-albi`, c'est le piège.
+
+**La correction :**
+
+1. Supprimer la ligne en erreur (clic sur la ligne → menu ⋮ → *Supprimer le sitemap*).
+2. Vérifier d'abord dans un navigateur que le fichier répond bien :
+   <https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml>
+   → vous devez voir du XML avec 5 balises `<loc>`. Si oui, le fichier est bon,
+   le problème est uniquement le chemin de soumission.
+3. Resoumettre en tapant, **selon la propriété que vous utilisez** :
+
+   | Propriété Search Console | Ce qu'il faut taper dans le champ |
+   |---|---|
+   | `https://franckgaliniephoto.github.io/` | `photo-identite-albi/sitemap.xml` |
+   | `https://franckgaliniephoto.github.io/photo-identite-albi/` | `sitemap.xml` |
+
+4. L'état passe à « Réussite » — parfois après quelques heures, Google ne lit pas
+   toujours dans la minute. « En attente » n'est pas une erreur, laissez tourner
+   un jour avant de vous inquiéter.
+
+> **Le plus simple**, si vous avez un doute : créez une propriété *Préfixe d'URL*
+> sur `https://franckgaliniephoto.github.io/photo-identite-albi/` et travaillez
+> uniquement dedans. Vous ne verrez que vos pages, et le champ sitemap se réduit
+> à `sitemap.xml`. C'est aussi la propriété qui donnera des statistiques propres,
+> sans mélange avec d'éventuels autres projets hébergés sur le même compte GitHub.
 
 ### 1.2 Bing Webmaster Tools
 
@@ -233,4 +273,4 @@ satellites comme du spam et peut pénaliser le site entier.
 
 ---
 
-*Dernière mise à jour : 4 août 2026.*
+*Dernière mise à jour : 21 août 2026.*
