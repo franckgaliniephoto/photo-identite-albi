@@ -87,6 +87,34 @@ photo-identité, drone, photobooth, numérisation. Une seule ligne `Disallow: /`
 `robots.txt` de ce dépôt-ci reste décoratif tant que le site vit dans un
 sous-dossier (voir §5).
 
+#### ❌ Impasse : la propriété « Domaine » est impossible sur github.io
+
+Search Console propose deux types de propriétés. Une seule vous est accessible.
+
+| Type | Validation | Possible ici ? |
+|---|---|---|
+| **Préfixe d'URL** `https://franckgaliniephoto.github.io/photo-identite-albi/` | balise HTML, déjà en place dans `index.html` | ✅ **c'est celle que vous utilisez** |
+| **Domaine** `franckgaliniephoto.github.io` | enregistrement DNS TXT | ❌ impossible |
+
+Pourquoi l'impossibilité : une propriété « Domaine » exige d'ajouter un
+enregistrement TXT dans la **zone DNS** du domaine. La zone de `github.io`
+appartient à GitHub, et GitHub ne permet à aucun utilisateur d'y créer
+d'enregistrement. L'écran de Google vous invite à vous connecter à « votre
+fournisseur de nom de domaine » : ici ce serait GitHub, qui n'offre pas ce
+service. Le code `google-site-verification=…` fourni par Google ne pourra donc
+être déposé nulle part, quel que soit le registrar.
+
+Ce n'est pas gênant : la propriété **Préfixe d'URL** est déjà validée et donne
+accès à tout ce qui compte — Performances, Inspection de l'URL, Sitemaps,
+Pages indexées. La propriété « Domaine » n'apporte qu'un périmètre plus large,
+sans intérêt pour un site en sous-dossier.
+
+> **Quand cet écran deviendra utile** : le jour où vous basculerez sur un
+> domaine bien à vous, `photo-identite.franckgphotographie.fr` (voir §5). Là,
+> le TXT s'ajoute chez **votre** registrar, sur `franckgphotographie.fr`, et la
+> propriété Domaine devient parfaitement légitime. C'est une raison de plus de
+> faire cette bascule.
+
 ### 1.2 Bing Webmaster Tools
 
 <https://www.bing.com/webmasters> — import direct depuis Search Console en un clic.
