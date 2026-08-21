@@ -20,46 +20,72 @@ surtout **ce qui ne peut être fait que par vous**, en dehors du code.
 3. **Soumettre le sitemap** — voir le piège ci-dessous, c'est là que ça coince.
 4. Demander l'indexation des 5 URL une par une via l'outil « Inspection de l'URL ».
 
-#### ⚠️ « Impossible de récupérer le sitemap » — le piège du sous-dossier
+#### ⚠️ « Impossible de récupérer le sitemap »
 
-Le site vit dans un **sous-dossier** (`/photo-identite-albi/`), pas à la racine du
-domaine. Dans le champ de soumission, Search Console **préfixe automatiquement**
-l'adresse de la propriété. Résultat : si la propriété est la racine
-`https://franckgaliniephoto.github.io/` et qu'on tape simplement `sitemap.xml`,
-Google va chercher :
+C'est le message le plus déroutant de Search Console, parce qu'il ne veut
+**presque jamais** dire que votre sitemap est cassé. Avant de toucher au
+fichier, vérifiez dans cet ordre.
 
-```
-https://franckgaliniephoto.github.io/sitemap.xml        ❌ n'existe pas → « Impossible de récupérer »
-https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml   ✅ le vrai fichier
-```
+**1. Le fichier répond-il ?** Ouvrez-le dans un navigateur :
+<https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml>
+Si le XML s'affiche, le fichier est bon. Ne le modifiez pas, ne le
+« simplifiez » pas : ce n'est pas lui le problème.
 
-**Comment savoir ce que Google a réellement essayé** : dans le tableau
-« Sitemaps envoyés », la colonne *Sitemap* affiche le chemin complet depuis le
-domaine. S'il affiche `/sitemap.xml` sans `photo-identite-albi`, c'est le piège.
+**2. Le chemin soumis est-il le bon ?** Search Console **préfixe
+automatiquement** l'adresse de la propriété. Le champ affiche déjà
+`https://franckgaliniephoto.github.io/photo-identite-albi/` : il ne faut donc
+taper que `sitemap.xml`, rien de plus. Dans le tableau, la ligne s'affiche
+alors `/sitemap.xml` — c'est normal et c'est correct.
 
-**La correction :**
+**3. Que voit réellement Googlebot ?** C'est le test décisif, et le seul qui
+donne une réponse au lieu d'une hypothèse :
 
-1. Supprimer la ligne en erreur (clic sur la ligne → menu ⋮ → *Supprimer le sitemap*).
-2. Vérifier d'abord dans un navigateur que le fichier répond bien :
-   <https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml>
-   → vous devez voir du XML avec 5 balises `<loc>`. Si oui, le fichier est bon,
-   le problème est uniquement le chemin de soumission.
-3. Resoumettre en tapant, **selon la propriété que vous utilisez** :
+> *Inspection de l'URL* → coller
+> `https://franckgaliniephoto.github.io/photo-identite-albi/sitemap.xml`
+> → Entrée.
 
-   | Propriété Search Console | Ce qu'il faut taper dans le champ |
-   |---|---|
-   | `https://franckgaliniephoto.github.io/` | `photo-identite-albi/sitemap.xml` |
-   | `https://franckgaliniephoto.github.io/photo-identite-albi/` | `sitemap.xml` |
+Google répond alors explicitement : « L'URL est disponible pour Google »,
+« Bloquée par le fichier robots.txt », « Introuvable (404) » ou « Erreur
+serveur ». Chacune de ces réponses désigne une cause différente. Tant que vous
+n'avez pas fait ce test, tout le reste est de la devinette.
 
-4. L'état passe à « Réussite » — parfois après quelques heures, Google ne lit pas
-   toujours dans la minute. « En attente » n'est pas une erreur, laissez tourner
-   un jour avant de vous inquiéter.
+**4. Patientez.** Juste après une soumission, « Impossible de récupérer » est
+le plus souvent un état **transitoire** : Google met la lecture en file
+d'attente et affiche ce statut tant qu'aucune lecture n'a abouti. La colonne
+*Dernière lecture* vide en est le signe. Laissez passer **24 à 48 heures**
+avant de conclure. Resoumettre en boucle la même URL correcte ne change rien
+et n'accélère rien.
 
-> **Le plus simple**, si vous avez un doute : créez une propriété *Préfixe d'URL*
-> sur `https://franckgaliniephoto.github.io/photo-identite-albi/` et travaillez
-> uniquement dedans. Vous ne verrez que vos pages, et le champ sitemap se réduit
-> à `sitemap.xml`. C'est aussi la propriété qui donnera des statistiques propres,
-> sans mélange avec d'éventuels autres projets hébergés sur le même compte GitHub.
+#### Vous n'avez pas besoin du sitemap pour être indexé
+
+Point important, qui dédramatise : **le sitemap est un confort, pas une
+condition.** Google indexe très bien un site de 7 pages sans lui. Pendant que
+le statut se débloque, faites ceci — c'est plus rapide et plus fiable :
+
+> *Inspection de l'URL* → coller l'adresse d'une page → *Demander une
+> indexation*. À répéter pour les 7 URL, une par une.
+
+C'est la voie directe. Le sitemap, lui, ne fait qu'aider Google à
+**redécouvrir** les pages quand elles changent — utile sur la durée, jamais
+bloquant au démarrage.
+
+#### Le cas particulier du robots.txt (à connaître)
+
+Sur une adresse en `compte.github.io/projet/`, le seul `robots.txt` que Google
+lit est celui de la **racine du domaine** :
+`https://franckgaliniephoto.github.io/robots.txt`.
+
+Vérifié : il n'existe aucun dépôt nommé `franckgaliniephoto.github.io` sur le
+compte, donc cette adresse renvoie une 404 — et une 404 sur robots.txt
+signifie « tout est autorisé » pour Google. Ce n'est donc pas un blocage.
+
+Mais retenez le mécanisme : **si un jour vous créez un dépôt
+`franckgaliniephoto.github.io`** (site personnel GitHub), son `robots.txt`
+s'appliquera d'un coup à *tous* vos projets hébergés sur ce compte —
+photo-identité, drone, photobooth, numérisation. Une seule ligne `Disallow: /`
+à cet endroit désindexerait l'ensemble. C'est aussi pour cela que le
+`robots.txt` de ce dépôt-ci reste décoratif tant que le site vit dans un
+sous-dossier (voir §5).
 
 ### 1.2 Bing Webmaster Tools
 
